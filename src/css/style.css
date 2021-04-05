@@ -1,0 +1,619 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Handlee|Satisfy|Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+p,
+h1,
+h2,
+span {
+  font-family: "Handlee", cursive; }
+
+a {
+  font-family: "Special Elite", cursive; }
+
+#navbar {
+  top: 0;
+  position: fixed;
+  padding: 0 !important;
+  background-color: #000;
+  z-index: 2000;
+  transition: .5s; }
+  #navbar nav {
+    transition: .5s;
+    margin: 5px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #navbar nav .logo {
+      margin-right: 0px; }
+      #navbar nav .logo img {
+        width: 120px;
+        height: 40px; }
+    #navbar nav ul {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center; }
+      #navbar nav ul li {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: "Special Elite", cursive; }
+        #navbar nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 17px; }
+
+#inicial {
+  padding: 0 !important; }
+  #inicial .jumbotron {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0px;
+    background: url("../img/tattooing3.jpg");
+    box-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    background-position: center center; }
+    #inicial .jumbotron .row {
+      padding: 180px;
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      #inicial .jumbotron .row .content {
+        color: #fff; }
+        #inicial .jumbotron .row .content h1 {
+          font-size: 80px; }
+        #inicial .jumbotron .row .content p {
+          background-color: rgba(0, 0, 0, 0.4);
+          font-family: "Special Elite", cursive;
+          text-align: center;
+          font-size: 20px;
+          border-radius: 10px; }
+
+#about {
+  background-color: #000;
+  color: #fff;
+  padding: 0;
+  padding-top: 50px;
+  margin: 0; }
+  #about .row {
+    padding: 0; }
+    #about .row .col-md-6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #about .row .col-md-6 h1 {
+        font-size: 60px; }
+      #about .row .col-md-6 .textPresentation {
+        padding-left: 200px;
+        text-align: right; }
+        #about .row .col-md-6 .textPresentation p {
+          text-align: justify; }
+      #about .row .col-md-6 .icons {
+        width: 100%; }
+        #about .row .col-md-6 .icons .row {
+          margin: 60px;
+          display: flex;
+          justify-content: space-around; }
+          #about .row .col-md-6 .icons .row .content {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+            #about .row .col-md-6 .icons .row .content img {
+              width: 60px;
+              height: 60px; }
+            #about .row .col-md-6 .icons .row .content h1 {
+              color: white;
+              font-size: 15px; }
+      #about .row .col-md-6 .quote {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        right: -60px;
+        top: 220px;
+        transform: rotate(90deg); }
+
+#cards {
+  margin: 0px;
+  padding: 0; }
+  #cards .row {
+    padding: 80px;
+    display: flex;
+    justify-content: space-evenly; }
+    #cards .row .card {
+      width: 350px;
+      height: 200px; }
+      #cards .row .card img {
+        width: 350px;
+        height: 200px;
+        object-fit: cover; }
+      #cards .row .card h2 {
+        border: none;
+        position: absolute;
+        top: 60px;
+        left: -1px;
+        width: 351px;
+        height: 80px;
+        background: #fff;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #000;
+        mix-blend-mode: screen; }
+    #cards .row .card:nth-child(1) h2 {
+      padding-left: 40px;
+      font-size: 60px; }
+    #cards .row .card:nth-child(2) h2 {
+      padding-left: 100px;
+      font-size: 60px; }
+    #cards .row .card:nth-child(3) h2 {
+      padding-left: 70px;
+      font-size: 60px; }
+
+#gallery {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000; }
+  #gallery h1 {
+    font-family: "Special Elite", cursive;
+    font-size: 60px;
+    color: #fff; }
+  #gallery .filtros {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto; }
+    #gallery .filtros .listaFiltro {
+      display: flex;
+      justify-content: space-between;
+      margin: 0; }
+      #gallery .filtros .listaFiltro .listaFiltroItem {
+        margin-right: 10px; }
+        #gallery .filtros .listaFiltro .listaFiltroItem:active {
+          background-color: #262626; }
+      #gallery .filtros .listaFiltro .btn {
+        background-color: #000;
+        color: white;
+        transition: 0.3s;
+        height: 50px; }
+      #gallery .filtros .listaFiltro .btn:hover {
+        transition: 0.3s; }
+      #gallery .filtros .listaFiltro .btn::after {
+        content: '';
+        height: 1px;
+        width: 100%;
+        background: #fff;
+        color: #fff;
+        transform: scaleX(0);
+        transition: .2s;
+        margin-top: 5px; }
+      #gallery .filtros .listaFiltro .btn:hover::after {
+        display: block;
+        transform: scaleX(1);
+        transition: .2s; }
+    #gallery .filtros .searchBar {
+      width: 70%;
+      border-color: #000;
+      margin: 20px; }
+      #gallery .filtros .searchBar:focus {
+        box-shadow: 0px 0px 0px #000; }
+  #gallery .galleryContainer {
+    width: 80%; }
+    #gallery .galleryContainer .thumbnail {
+      padding-bottom: 20px;
+      position: relative;
+      border-radius: 5px; }
+      #gallery .galleryContainer .thumbnail img {
+        width: 250px;
+        height: 180px; }
+    #gallery .galleryContainer .item-desc {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      right: 15px;
+      display: inline-block;
+      text-transform: uppercase;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 5px; }
+
+#galleryAccess {
+  background-image: url("../img/tattooing2.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 500px 500px rgba(0, 0, 0, 0.6);
+  background-attachment: fixed;
+  padding-top: 20px;
+  padding-bottom: 50px; }
+  #galleryAccess .row .col-md-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #galleryAccess .row .col-md-12 .logoImg {
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #galleryAccess .row .col-md-12 button {
+      margin-top: 30px;
+      background-color: #128c7e;
+      box-shadow: 0px 0px 10px #128c7e;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      width: 250px;
+      height: 50px; }
+    #galleryAccess .row .col-md-12 button:hover {
+      background-color: #075e54;
+      box-shadow: 0px 0px 10px #075e54;
+      color: #fff; }
+
+#count {
+  margin: 0; }
+  #count .row {
+    padding: 60px; }
+    #count .row .col-md-3 {
+      border-left: 2px dotted rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      #count .row .col-md-3 h1 {
+        font-weight: bold;
+        font-size: 50px; }
+      #count .row .col-md-3 h2 {
+        font-size: 25px; }
+    #count .row .col-md-3:nth-child(1) {
+      border: none; }
+
+#testimonials .row {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; }
+  #testimonials .row .card {
+    margin: 20px;
+    margin-bottom: 60px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 60px 25px 10px 25px;
+    width: 300px; }
+    #testimonials .row .card .photo {
+      border: 10px solid #fff;
+      position: absolute;
+      top: -50px;
+      left: 100px;
+      height: 100px;
+      width: 100px;
+      border-radius: 50px; }
+    #testimonials .row .card h1 {
+      text-align: center;
+      font-size: 30px; }
+    #testimonials .row .card .rates {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center; }
+      #testimonials .row .card .rates .rate {
+        margin: 2px;
+        width: 20px;
+        height: 20px; }
+    #testimonials .row .card .aspas {
+      margin: 0 auto;
+      width: 40px;
+      height: 40px; }
+    #testimonials .row .card p {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 16px; }
+
+#instagram {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0px 100px 0px; }
+  #instagram .title {
+    text-align: center; }
+    #instagram .title h1 {
+      font-size: 50px; }
+    #instagram .title .content {
+      content: "";
+      margin: 0 auto;
+      width: 250px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.6); }
+    #instagram .title p {
+      padding: 10px;
+      font-size: 16px; }
+  #instagram .grid {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #instagram .grid .photo {
+      position: relative;
+      overflow: hidden; }
+      #instagram .grid .photo img {
+        margin: 0px 10px 10px 0px;
+        width: 300px;
+        height: 250px; }
+      #instagram .grid .photo a .content {
+        transition: .5s;
+        position: absolute;
+        top: -300px;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 300px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff; }
+        #instagram .grid .photo a .content i {
+          font-size: 60px; }
+    #instagram .grid .photo:hover .content {
+      transition: .5s;
+      top: 0;
+      cursor: pointer; }
+
+#line {
+  background-color: #000000;
+  background-image: linear-gradient(45deg, #000000 0%, #075e54 25%, #128c7e 50%, #075e54 75%, #000000 99%);
+  height: 2px; }
+
+#wpp {
+  background-image: url("../img/TattooProccess.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  box-shadow: inset 800px 800px rgba(0, 0, 0, 0.6); }
+  #wpp .row .logoImg {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #wpp .row .textWpp {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 120px; }
+    #wpp .row .textWpp button {
+      background-color: #128c7e;
+      box-shadow: 0px 0px 10px #128c7e;
+      color: #fff;
+      font-weight: bold; }
+    #wpp .row .textWpp button:hover {
+      background-color: #075e54;
+      box-shadow: 0px 0px 10px #075e54;
+      color: #fff; }
+
+#team {
+  padding: 100px; }
+  #team .title {
+    text-align: center; }
+    #team .title h1 {
+      font-size: 50px; }
+    #team .title .content {
+      content: "";
+      margin: 0 auto;
+      width: 200px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.6); }
+    #team .title p {
+      padding: 10px;
+      font-size: 16px; }
+  #team .row {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1100px; }
+    #team .row .card {
+      border-radius: 0;
+      border: none;
+      overflow: hidden;
+      width: 300px; }
+      #team .row .card .card-image img {
+        width: 100%;
+        height: 400px; }
+      #team .row .card .card-content {
+        width: 100%;
+        background-color: #fff;
+        color: #000;
+        position: absolute;
+        bottom: -70px;
+        transition: .5s;
+        padding: 10px 20px 20px 20px; }
+        #team .row .card .card-content .bio {
+          text-align: center; }
+          #team .row .card .card-content .bio h1 {
+            font-size: 24px; }
+          #team .row .card .card-content .bio p {
+            font-size: 18px; }
+        #team .row .card .card-content .media {
+          display: flex;
+          justify-content: center; }
+          #team .row .card .card-content .media a {
+            margin: 0px 10px 0px 10px;
+            text-decoration: none; }
+            #team .row .card .card-content .media a i {
+              color: #000;
+              padding: 8px 13px 8px 13px;
+              font-size: 20px; }
+            #team .row .card .card-content .media a .fa-facebook-f:hover {
+              color: #fff;
+              background-color: #3b5998;
+              border-radius: 15px; }
+            #team .row .card .card-content .media a .fa-instagram:hover {
+              color: #fff;
+              background: #f09433;
+              background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+              border-radius: 15px; }
+            #team .row .card .card-content .media a .fa-pinterest-p:hover {
+              color: #fff;
+              background-color: #BD081C;
+              border-radius: 15px; }
+    #team .row .card:hover .card-content {
+      position: absolute;
+      bottom: 0;
+      transition: .5s; }
+
+#contact {
+  margin: 0;
+  padding: 0;
+  background-color: #000; }
+  #contact footer a {
+    letter-spacing: 1px;
+    font-family: "Handlee", cursive;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 0; }
+  #contact footer p {
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 16px; }
+  #contact footer h2 {
+    letter-spacing: 1px;
+    font-family: "Handlee", cursive;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff; }
+  #contact footer h1 {
+    padding: 80px 0px 0px 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 60px; }
+  #contact footer .placement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px 30px 0px;
+    color: #fff; }
+    #contact footer .placement .info {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 15px;
+      width: 200px;
+      height: 180px;
+      text-align: center; }
+      #contact footer .placement .info i {
+        font-size: 40px;
+        margin-bottom: 30px; }
+  #contact footer .row .more {
+    display: flex;
+    justify-content: right;
+    padding: 60px 20px 60px 150px; }
+    #contact footer .row .more .text {
+      padding: 0;
+      margin: 0px 20px 0px 20px;
+      text-align: left; }
+  #contact footer .row .payment-methods {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 40px 60px 80px; }
+    #contact footer .row .payment-methods .payment {
+      padding: 0px 0px 30px 0px;
+      color: #fff; }
+      #contact footer .row .payment-methods .payment .methods i {
+        margin-right: 10px;
+        font-size: 35px; }
+    #contact footer .row .payment-methods .socialMedia {
+      padding: 0px 0px 30px 0px;
+      color: #fff; }
+      #contact footer .row .payment-methods .socialMedia .media i {
+        margin-right: 20px;
+        font-size: 35px; }
+  #contact footer .map {
+    display: flex;
+    justify-content: center; }
+    #contact footer .map iframe {
+      width: 1100px;
+      height: 350px;
+      border: 0;
+      border-radius: 20px; }
+  #contact footer .footer {
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center; }
+    #contact footer .footer .info {
+      width: 800px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly; }
+
+::-webkit-scrollbar {
+  overflow: hidden;
+  width: 10px;
+  border-radius: 0;
+  transition: width .5s ease; }
+
+::-webkit-scrollbar-track {
+  background-color: #000; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #128c7e;
+  border-radius: 0;
+  transition: 0.5s; }
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 20px;
+  background-color: #075e54;
+  border-radius: 0;
+  transition: 0.5s; }
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px); }
+
+[data-anime] {
+  opacity: 0; }
+
+[data-anime="ToLeft"] {
+  transform: translateX(1000px);
+  transition: 2.0s; }
+
+[data-anime="ToRight"] {
+  transform: translateX(-1000px);
+  transition: 1.5s; }
+
+[data-anime="ToBottom"] {
+  transform: translateY(-500px);
+  transition: 2.5s; }
+
+[data-anime="ToTop"] {
+  transform: translateY(500px);
+  transition: 2.5s; }
+
+[data-anime="slow"] {
+  transform: translateY(-1000px);
+  transition: 1.5s; }
+
+[data-anime="fadeIn"] {
+  transition: 1.5s; }
+

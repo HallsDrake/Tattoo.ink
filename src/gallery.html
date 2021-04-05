@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- SESSÃO GALERIA -->
+    <div class="container-fluid" id="gallery">
+        <h1>Nossos trabalhos</h1>
+        <div class="row">
+            <div class="col-md-12 filtros">
+                <ul class="list-inline listaFiltro">
+                    <li class="listaFiltroItem btn active" data-filter="all" onclick="show()">Todas</li>
+                    <li class="listaFiltroItem btn" data-filter="Aquarela" onclick="show()">Aquarela</li>
+                    <li class="listaFiltroItem btn" data-filter="Lettering">Lettering</li>
+                    <li class="listaFiltroItem btn" data-filter="Sketch">Sketch</li>
+                    <li class="listaFiltroItem btn" data-filter="Old">Old school</li>
+                    <li class="listaFiltroItem btn" data-filter="Realista">Realista</li>
+                    <li class="listaFiltroItem btn" data-filter="Geek">Geek</li>
+                    <li class="listaFiltroItem btn" data-filter="Piercing">Piercing</li>
+                </ul>
+                <input type="text" placeholder="Search" class="searchBar form-control" name="search" data-search>
+            </div>
+        </div>
+
+        <div class="row filtr-container galleryContainer" id="galleryContainer">
+            <!-- item -->
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Aquarela" data-sort="Aquarela">
+                <img src="img/aquarela/aquarela2.png" alt=""> <span class="item-desc">aquarela</span>
+            </div>
+
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Aquarela" data-sort="Aquarela">
+                <img src="img/aquarela/aquarela5.png" alt=""> <span class="item-desc">aquarela</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Aquarela" data-sort="Aquarela">
+                <img src="img/aquarela/aquarela4.png" alt=""> <span class="item-desc">aquarela</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Aquarela" data-sort="Aquarela">
+                <img src="img/aquarela/aquarela1.png" alt=""> <span class="item-desc">aquarela</span>
+            </div>
+
+            <!-- item -->
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Lettering" data-sort="Lettering">
+                <img src="img/lettering/lettering9.png" alt=""> <span class="item-desc">Lettering</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Lettering" data-sort="Lettering">
+                <img src="img/lettering/lettering.png" alt=""> <span class="item-desc">Lettering</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Lettering" data-sort="Lettering">
+                <img src="img/lettering/lettering2.png" alt=""> <span class="item-desc">Lettering</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Lettering" data-sort="Lettering">
+                <img src="img/lettering/lettering1.png" alt=""> <span class="item-desc">Lettering</span>
+            </div>
+
+
+            <!-- item -->
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Sketch" data-sort="Sketch">
+                <img src="img/sketch/sketch1.png" alt=""> <span class="item-desc">Sketch</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Sketch" data-sort="Sketch">
+                <img src="img/sketch/sketch2.png" alt=""> <span class="item-desc">Sketch</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Sketch" data-sort="Sketch">
+                <img src="img/sketch/sketch3.png" alt=""> <span class="item-desc">Sketch</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Sketch" data-sort="Sketch">
+                <img src="img/sketch/sketch4.png" alt=""> <span class="item-desc">Streets</span>
+            </div>
+
+
+            <!-- item -->
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Old" data-sort="Old">
+                <img src="img/old/old6.png" alt=""> <span class="item-desc">Old</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Old" data-sort="Old">
+                <img src="img/old/old7.png" alt=""> <span class="item-desc">Old</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Old" data-sort="Old">
+                <img src="img/old/old1.png" alt=""> <span class="item-desc">Old</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Old" data-sort="Old">
+                <img src="img/old/old4.png" alt=""> <span class="item-desc">Old</span>
+            </div>
+
+
+            <!-- item -->
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Realista" data-sort="Realista">
+                <img src="img/realista/realista3.png" alt=""> <span class="item-desc">Realista</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Realista" data-sort="Realista">
+                <img src="img/realista/realista7.png" alt=""> <span class="item-desc">Realista</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Realista" data-sort="Realista">
+                <img src="img/realista/realista9.png" alt=""> <span class="item-desc">Realista</span>
+            </div>
+
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Realista" data-sort="Realista">
+                <img src="img/realista/realista5.png" alt=""> <span class="item-desc">Realista</span>
+            </div>
+
+
+            <!-- item -->
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Geek" data-sort="Geek">
+                <img src="img/geek/geek9.png" alt=""> <span class="item-desc">geek</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Geek" data-sort="Geek">
+                <img src="img/geek/geek.png" alt=""> <span class="item-desc">geek</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Geek" data-sort="Geek">
+                <img src="img/geek/geek4.png" alt=""> <span class="item-desc">geek</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Geek" data-sort="Geek">
+                <img src="img/geek/geek1.png" alt=""> <span class="item-desc">geek</span>
+            </div>
+
+
+            <!-- item -->
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Piercing" data-sort="Piercing">
+                <img src="img/piercing/piercing.png" alt=""> <span class="item-desc">Piercing</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Piercing" data-sort="Piercing">
+                <img src="img/piercing/piercing2.png" alt=""> <span class="item-desc">Piercing</span>
+            </div>
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Piercing" data-sort="Piercing">
+                <img src="img/piercing/piercing1.png" alt=""> <span class="item-desc">Piercing</span>
+            </div>
+
+            <div class="col-md-3 filtr-item thumbnail" data-category="all,Piercing" data-sort="Piercing">
+                <img src="img/piercing/piercing5.png" alt=""> <span class="item-desc">Piercing</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/1.3.4/jquery.filterizr.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
